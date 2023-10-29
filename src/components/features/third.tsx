@@ -12,7 +12,7 @@ import {
   Icon,
   useColorModeValue,
 } from '@chakra-ui/react'
-import { PiNumberSquareOneDuotone, PiNumberSquareTwoDuotone, PiNumberSquareThreeDuotone, PiNumberSquareFourDuotone } from 'react-icons/io5'
+import { IoAnalyticsSharp, IoLogoBitcoin, IoSearchSharp } from 'react-icons/io5'
 import { ReactElement } from 'react'
 
 interface FeatureProps {
@@ -56,22 +56,22 @@ export default function SplitWithImage2() {
                 <StackDivider borderColor={useColorModeValue('gray.100', 'gray.700')} />
               }>
               <Feature
-                icon={<Icon as={PiNumberSquareOneDuotone} color={'yellow.500'} w={5} h={5} />}
+                icon={<Icon as={IoAnalyticsSharp} color={'yellow.500'} w={5} h={5} />}
                 iconBg={useColorModeValue('yellow.100', 'yellow.900')}
                 text={'Devis Digital'}
               />
               <Feature
-                icon={<Icon as={PiNumberSquareTwoDuotone} color={'green.500'} w={5} h={5} />}
+                icon={<Icon as={IoLogoBitcoin} color={'green.500'} w={5} h={5} />}
                 iconBg={useColorModeValue('green.100', 'green.900')}
                 text={'Rencontre'}
               />
               <Feature
-                icon={<Icon as={PiNumberSquareThreeDuotone} color={'purple.500'} w={5} h={5} />}
+                icon={<Icon as={IoSearchSharp} color={'purple.500'} w={5} h={5} />}
                 iconBg={useColorModeValue('purple.100', 'purple.900')}
                 text={'Conception du projet'}
               />
               <Feature
-                icon={<Icon as={PiNumberSquareFourDuotone} color={'purple.500'} w={5} h={5} />}
+                icon={<Icon as={IoLogoBitcoin} color={'purple.500'} w={5} h={5} />}
                 iconBg={useColorModeValue('purple.100', 'purple.900')}
                 text={'Début des travaux'}
               />
