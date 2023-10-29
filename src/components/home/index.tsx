@@ -2,7 +2,7 @@
 
 import { Stack, Flex, Button, Text, VStack,  Heading,useBreakpointValue } from '@chakra-ui/react'
 
-
+import NextLink from 'next/link';
 
 export default function WithBackgroundImage() {
   return (
@@ -40,13 +40,15 @@ export default function WithBackgroundImage() {
         </Text>
           <Stack direction={'row'}>
             
-            <Button
-              bg={'orange.500'}
-              rounded={'full'}
-              color={'white'}
-              _hover={{ bg: 'blue.500' }}>
-              Nos Services
-            </Button>
+          <NextLink href="/services" passHref>
+              <Button
+                bg={'orange.500'}
+                rounded={'full'}
+                color={'white'}
+                _hover={{ bg: 'blue.500' }}>
+                Nos Services
+              </Button>
+            </NextLink>
            
           </Stack>
         </Stack>
