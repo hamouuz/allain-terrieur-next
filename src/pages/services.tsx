@@ -1,12 +1,12 @@
 import Head from 'next/head'
 import WithSubnavigation from '@/components/sidebar'
 import LargeWithLogoLeft from '@/components/footer'
-import WithBackgroundImage from '@/components/home'
+import WithBackgroundImage from '@/components/services/index'
 
-import SplitWithImage from '@/components/features'
-import BasicStatistics from '@/components/features/second'
-import SplitWithImage2 from '@/components/features/third'
-import CaptionCarousel from '@/components/features/fourth'
+import SplitWithImage from '@/components/services/second'
+import SplitWithImage3 from '@/components/services/third'
+import SplitWithImage4 from '@/components/services/fourth'
+
 
 
 
@@ -25,9 +25,9 @@ export default function Home() {
 
       <WithBackgroundImage/>
       <SplitWithImage/>
-      <BasicStatistics/>
-      <SplitWithImage2/>
-      <CaptionCarousel/>
+      <SplitWithImage3/>
+      <SplitWithImage4/>
+    
       
 
       <LargeWithLogoLeft/>

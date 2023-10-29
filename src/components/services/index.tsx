@@ -10,7 +10,7 @@ export default function WithBackgroundImage() {
       w={'full'}
       h={'100vh'}
       backgroundImage={
-        'url(https://assets.thesparksite.com/uploads/sites/2183/2022/01/spacejoy-9M66C-w-ToM-unsplash.jpg)'
+        'url(https://images.unsplash.com/photo-1600585152220-90363fe7e115?auto=format&fit=crop&q=80&w=1470&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)'
       }
       backgroundSize={'cover'}
       backgroundPosition={'center center'}>
@@ -21,8 +21,8 @@ export default function WithBackgroundImage() {
         bgGradient={'linear(to-r, blackAlpha.800, transparent)'}>
 
         <Stack
-        textAlign={'center'}
-        align={'center'}
+        textAlign={'start'}
+        align={'start'}
         spacing={{ base: 8, md: 10 }}
         py={{ base: 20, md: 28 }}>
         <Heading
@@ -30,13 +30,18 @@ export default function WithBackgroundImage() {
           color={'white'}
           fontSize={{ base: '4xl', sm: '3xl', md: '6xl' }}
           lineHeight={'100%'}>
-          Créons ensemble votre projet de rénovation{' '}
+          La rénovation avec <br />
+            <Text as={'span'} color={'orange.400'}>
+            Allain-Terrieur
+            </Text>
           
         </Heading>
         <Text color={'white'} maxW={'3xl'}>
-         Alain Terrieur est un expert en décoration d'intérieur avec plus de 15 ans d'expérience dans 
-         l'industrie. Sa passion pour la création d'espaces uniques et élégants l'a conduit à 
-         travailler sur de nombreux projets exceptionnels.
+        Que ce soit dans le cadre d’un projet de vente ou tout simplement pour profiter de
+        davantage de confort, réaliser des travaux de rénovation de maison permet de réduire sa
+        facture d’énergie ou de profiter d’un intérieur mieux agencé afin de gagner de l’espace par
+        exemple. Chez Architoi, nous accompagnons tous ceux qui le souhaitent dans la rénovation
+        de leur bien immobilier, grâce aux conseils d’architectes et de chefs de projet.
         </Text>
           <Stack direction={'row'}>
             

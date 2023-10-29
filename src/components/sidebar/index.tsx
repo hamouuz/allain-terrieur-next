@@ -23,6 +23,10 @@ import {
   ChevronRightIcon,
 } from '@chakra-ui/icons'
 
+import NextLink from 'next/link';
+
+
+
 export default function WithSubnavigation() {
   const { isOpen, onToggle } = useDisclosure()
 
@@ -55,20 +59,26 @@ export default function WithSubnavigation() {
             aria-label={'Toggle Navigation'}
           />
         </Flex>
-        <Flex flex={{ base: 1 }} justify={{ base: 'center', md: 'start' }}>
-          <Text
-            textAlign={useBreakpointValue({ base: 'center', md: 'left' })}
-            fontFamily={'heading'}
-            color={'white'}
-          >
-            Logo
-          </Text>
+        <Flex flex={{ base: 1 }} justify={{ base: 'center', md: 'center' }}>
+            <NextLink href="/" passHref>
+              <Text
+                
+                textAlign={useBreakpointValue({ base: 'center', md: 'left' })}
+                fontFamily={'heading'}
+                fontWeight={'700'}
+                fontSize={'-moz-initial'}
+                color={'white'}
+                _hover={{ cursor: 'pointer' }}
+              >
+                Allain-Terrieur
+              </Text>
+            </NextLink>
 
-          <Flex display={{ base: 'none', md: 'flex' }} ml={10}>
-            <DesktopNav />
+            <Flex display={{ base: 'none', md: 'flex' }} ml={10}>
+              <DesktopNav />
+            </Flex>
           </Flex>
         </Flex>
-      </Flex>
 
       <Collapse in={isOpen} animateOpacity>
         <MobileNav />
@@ -229,17 +239,9 @@ const NAV_ITEMS: Array<NavItem> = [
 
   {
     label: 'Services',
-    href: '#'
+    href: '/services'
   },
 
-  {
-    label: 'Contact',
-    href: '#',
-  },
-
-  {
-    label: 'Qui sommes-nous',
-    href: '#',
-  },
+  
   
 ]
